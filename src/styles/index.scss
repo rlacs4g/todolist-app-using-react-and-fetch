@@ -11,3 +11,32 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+form{
+    width: 100%;
+    max-width: 500px;
+}
+
+body{
+   background: black;
+}
+
+h1{
+    color: whitesmoke;
+}
+
+li {
+    line-height: 25px;
+    &.list-group-item{
+        display: flex;
+    }
+    &:hover span.delete{
+        display: inline-block;
+    }
+    span.delete{
+        display: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: purple;
+    }
+}
